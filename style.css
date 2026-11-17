@@ -1457,6 +1457,18 @@ button {
     color: var(--text);
 }
 
+/* The same portfolio in its visual design lives at emilbisak.com */
+.footer-alt a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: color .2s;
+}
+
+.footer-alt a:hover {
+    color: var(--text);
+}
+
 /* ---------- Reveal animation ---------- */
 
 .js .reveal {
@@ -1705,81 +1717,5 @@ button {
     .js .reveal {
         opacity: 1;
         transform: none;
-    }
-}
-
-/* ---------- Archive notice (e-b.dev) ---------- */
-/* A slim bar above the header says this is an earlier version and links to the current site.
-   Everything that was placed below the fixed header moves down by the bar's height. */
-:root {
-    --banner-h: 36px;
-}
-
-.archive-bar {
-    position: fixed;
-    inset: 0 0 auto;
-    z-index: 60;
-    height: var(--banner-h);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: .45em;
-    padding-inline: 16px;
-    background: var(--surface);
-    border-bottom: 1px solid var(--border-strong);
-    color: var(--muted);
-    font-family: var(--font-mono);
-    font-size: 12px;
-    letter-spacing: .02em;
-    white-space: nowrap;
-}
-
-.archive-bar a {
-    color: var(--accent);
-    text-decoration: underline;
-    text-underline-offset: 3px;
-}
-
-.archive-short {
-    display: none;
-}
-
-body {
-    padding-top: var(--banner-h);
-}
-
-html {
-    scroll-padding-top: calc(var(--header-h) + var(--banner-h));
-}
-
-.site-header {
-    top: var(--banner-h);
-}
-
-.job-meta {
-    top: calc(var(--header-h) + var(--banner-h) + 24px);
-}
-
-@media (max-width: 860px) {
-    .nav-menu {
-        top: calc(var(--header-h) + var(--banner-h));
-    }
-}
-
-@media (max-width: 640px) {
-    :root {
-        --banner-h: 32px;
-    }
-
-    .archive-bar {
-        font-size: 11px;
-    }
-
-    .archive-full {
-        display: none;
-    }
-
-    .archive-short {
-        display: inline;
     }
 }
