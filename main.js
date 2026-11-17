@@ -91,6 +91,14 @@ document.querySelectorAll("[data-copy]").forEach((button) => {
     });
 });
 
+// Years of experience: counted from the first production job on 1 May 2019, so the number goes
+// up by itself every 1 May. The HTML holds the current value for visitors without JavaScript.
+const experienceNow = new Date();
+const experienceYears = experienceNow.getFullYear() - 2019 - (experienceNow.getMonth() < 4 ? 1 : 0);
+document.querySelectorAll("[data-years]").forEach((el) => {
+    el.textContent = String(experienceYears);
+});
+
 // Footer year
 const year = String(new Date().getFullYear());
 document.querySelectorAll("[data-year], [data-year-copy]").forEach((el) => {

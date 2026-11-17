@@ -1,6 +1,6 @@
 # Emil Bisak: portfolio, blueprint version
 
-The earlier version of my portfolio, kept online at **https://e-b.dev**.
+The earlier blueprint design of my portfolio, kept online at **https://e-b.dev**. The content matches the current site.
 
 The current site is **https://emilbisak.com** ([EmilBisak/portfolio](https://github.com/EmilBisak/portfolio)).
 
